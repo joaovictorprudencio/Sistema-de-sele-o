@@ -131,7 +131,7 @@ public class App {
             funcionariosPorFuncao.computeIfAbsent(funcao, key -> new ArrayList<>()).add(func);
         }
 
-        // Imprime os funcionários agrupados por função
+        
         for (Map.Entry<String, List<Funcionario>> entry : funcionariosPorFuncao.entrySet()) {
             System.out.println("Função: " + entry.getKey());
             for (Funcionario func : entry.getValue()) {
