@@ -127,7 +127,7 @@ public class App {
            for (Funcionario func : funcionarios) {
             String funcao = func.getFuncao();
             
-            // Usa computeIfAbsent para garantir que a lista seja inicializada se não existir
+           
             funcionariosPorFuncao.computeIfAbsent(funcao, key -> new ArrayList<>()).add(func);
         }
 
@@ -137,7 +137,7 @@ public class App {
             for (Funcionario func : entry.getValue()) {
                 System.out.println(func);
             }
-            System.out.println(); // Linha em branco para separar as funções
+            System.out.println(); 
         }
 
            break;
